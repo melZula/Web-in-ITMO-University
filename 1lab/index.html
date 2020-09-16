@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <title>Мелентьев Петр - М3305</title>
+        <link href="outlines.css" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="keywords" content="Петр Мелентьев">
+        <meta name="discription" content="Портфолио">
+    </head>
+    <body>
+        <header>
+            <nav><a href="index.html">Обо мне</a> | 
+                 <a href="index.html">Еще обо мне</a> | 
+                 <a>Не обо мне</a>
+            </nav>
+            <h2>Здравствуйте, меня зовут Петр</h2>
+        </header>
+        <main>
+            <section>
+                <h3>Что я умею</h3>
+                <ol start=1>
+                    <li>Разрабатывать backend на
+                        <ul>
+                            <li>Python</li>
+                            <li>Go</li>
+                            <li>C#</li>
+                        </ul>
+                    </li>
+                    <li>Всякие прикладные задачи на Python</li>
+                    <li>3 пункт</li>
+                </ol>
+            </section>
+            <section>
+                <h4>Что я не умею</h4>
+                <ol>
+                    <li>Писать о себе</li>
+                    <li>Разрабатывать frontend</li>
+                    <li>Писать 3 пункт</li>
+                </ol>
+            </section>
+            <section>
+                <h4>Опыт работы</h4>
+                <dl>
+                    <dt>Sixhands</dt>
+                    <dd>Python разработчик</dd>
+                    <dt>Начало работы</dt>
+                    <time datetime="2019-08-22">C августа 2019 г.</time>
+                    <dd>Разработка внутренней системы</dd>
+                    <dd>Разработка Web API</dd>
+                    <dt>Будущая работа</dt>
+                </dl>
+            </section>
+            <section>
+                <h4>Иногда я отдыхаю</h4>
+                Люблю кататься на <i>велике</i>, выезжать на природу.
+            </section>
+            <article>
+                <p>
+                    <q>Кто может - тот делает</q> 
+                    <cite>М.Ю.Егоров</cite>
+                </p>
+                <sub>Неважно кто важно, а важно кто неважно</sub>
+                
+            </article>
+            <article>
+                <pre>
+                    <code>
+                        @app.route('/admin/gov_corps', methods=['PUT'])
+                        @jwt_required()
+                        def edit_corps():
+                            body = request.get_json()
+                            if body.get('gov_corp_id') and body.get('name') and body.get('inn'):
+                                corp = models.Gov_Corps.query.filter_by(
+                                    gov_corp_id=body['gov_corp_id']).first()
+                                corp.name = body['name']
+                                corp.inn = body['inn']
+                                db.session.commit()
+                            else:
+                                return "Check your data", 400
+                            return 'OK', 200
+                    </code>
+                </pre>
+            </article>
+            <aside>
+                <h3>Рецепт шарлотки</h3>
+                <ul>
+                    <ol>Сахар - 1 стакан</ol>
+                    <ol>Куриное яйцо - 4 штуки</ol>
+                    <ol>Пшеничная мука - 1 стакан</ol>
+                    <ol>Яблоко - 1 кг</ol>
+                    <ol>Соль - на кончике ножа</ol>
+                    <ol>Сода - ½ чайной ложки</ol>
+                </ul>
+            </aside>
+            <aside>
+                <pre>
+                           .
+                          | \/|
+  (\   _                  ) )|/|
+      (/            _----. /.'.'
+.-._________..      .' @ _\  .'   
+'.._______.   '.   /    (_| .')
+  '._____.  /   '-/      | _.' 
+   '.______ (         ) ) \
+     '..____ '._       )  )
+        .' __.--\  , ,  // ((
+        '.'     |  \/   (_.'(  
+                '   \ .' 
+                 \   (
+                  \   '.
+                   \ \ '.)
+                    '-'-'
+                </pre>
+            </aside>
+        </main>
+        <footer>А это footer</footer>
+    </body>
+</html>
