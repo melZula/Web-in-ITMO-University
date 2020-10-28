@@ -2,23 +2,24 @@
 <html lang="ru">
     <head>
         <title>Мелентьев Петр - М3305</title>
-        <link href="outlines.css" rel="stylesheet">
+        <link href="style.css" rel="stylesheet">
         <meta charset="utf-8">
         <meta name="keywords" content="Петр Мелентьев">
         <meta name="discription" content="Портфолио">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Old+Standard+TT&display=swap&subset=cyrillic" rel="stylesheet">
     </head>
     <body>
-        <header>
+        <header class="page-header">
             <nav><a href="index.html">Обо мне</a> | 
                  <a href="index.html">Еще обо мне</a> | 
                  <a>Не обо мне</a>
             </nav>
-            <h2>Здравствуйте, меня зовут Петр</h2>
+            <h2 class="heading">Здравствуйте, меня зовут Петр</h2>
         </header>
-        <main>
-            <section>
-                <h3>Что я умею</h3>
-                <ol start=1>
+        <main class="intro">
+            <section class="container">
+                <h2>Что я умею</h2>
+                <ol start=1 class="skills-list">
                     <li>Разрабатывать backend на
                         <ul>
                             <li>Python</li>
@@ -30,7 +31,7 @@
                     <li>3 пункт</li>
                 </ol>
             </section>
-            <section>
+            <section class="container">
                 <h4>Что я не умею</h4>
                 <ol>
                     <li>Писать о себе</li>
@@ -38,19 +39,19 @@
                     <li>Писать 3 пункт</li>
                 </ol>
             </section>
-            <section>
+            <section class="container">
                 <h4>Опыт работы</h4>
                 <dl>
                     <dt>Sixhands</dt>
                     <dd>Python разработчик</dd>
                     <dt>Начало работы</dt>
                     <time datetime="2019-08-22">C августа 2019 г.</time>
-                    <dd>Разработка внутренней системы</dd>
+                    <dd>Разработка внутренней ERP системы</dd>
                     <dd>Разработка Web API</dd>
                     <dt>Будущая работа</dt>
                 </dl>
             </section>
-            <section>
+            <section class="container">
                 <h4>Иногда я отдыхаю</h4>
                 Люблю кататься на <i>велике</i>, выезжать на природу.
             </section>
@@ -62,7 +63,7 @@
                 <sub>Неважно кто важно, а важно кто неважно</sub>
                 
             </article>
-            <article>
+            <article class="container">
                 <pre>
                     <code>
                         @app.route('/admin/gov_corps', methods=['PUT'])
@@ -113,6 +114,9 @@
                 </pre>
             </aside>
         </main>
-        <footer>А это footer</footer>
+        <footer class="page-footer">
+            <a>Где меня найти и связаться</a>
+            <a class="footer-email">zula0747@gmail.com</a>
+        </footer>
     </body>
 </html>
