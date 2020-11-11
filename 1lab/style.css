@@ -4,9 +4,9 @@ body {
   font-family: "Montserrat", "Helvetica", "Arial", sans-serif;
   font-size: 16px;
   line-height: 32px;
-  color: #d0d2df;
+  color: #0c102e;
   background-color: #f2f4f6;
-  background-image: url("img/bg2.jpg");
+  background-image: url("img/bg3.jpg");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -19,6 +19,12 @@ main {
   padding: 10px 1%;
   backdrop-filter: blur(5px);
   border-radius: 15px;
+}
+img {
+  display: inline-block;
+  height: 400px;
+  width: 400px;
+  backdrop-filter: none;
 }
 .page-header {
   margin: 0 0 160px;
@@ -156,7 +162,7 @@ main {
   margin-left: 56px;
   color: inherit;
   text-decoration: none;
-  background-repeat: no- repeat;
+  background-repeat: no-repeat;
   background-position: left;
 }
 .footer-email {
