@@ -22,6 +22,7 @@ header {
 .container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   width: 30%;
   margin: 0 auto;
   padding: 10px 1%;
@@ -154,21 +155,11 @@ img {
 .projects p {
   margin: 0 0 24px;
 }
-.button {
-  padding: 6px 20px;
-  display: inline-block;
-  vertical-align: baseline;
-  text-decoration: none;
-  text-transform: uppercase;
-  border-radius: 4px;
-  background-color: #288be6;
-  color: #ffffff;
-}
 .page-footer {
   margin-left: 0 0;
   padding-top: 40px;
   padding-bottom: 10px;
-  background-color: #3918b1f6;
+  background-color: #044b88;
   color: #ffffff;
 }
 .page-footer a {
@@ -212,4 +203,15 @@ img {
   justify-content: center;
   margin-top: 0 auto;
   font-size: medium;
+}
+.contact {
+  position: fixed;
+  display: flex;
+  justify-content: right;
+  margin: 10px 10px;
+  padding: 20px 17px;
+  border-radius: 30px;
+  font-size: larger;
+  color: #f2f4f6;
+  background-color: #303354;
 }
