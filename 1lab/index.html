@@ -44,9 +44,20 @@
     </header>
     <main class="intro">
       <div>
-        <button class="contact">
+        <button class="contact" onclick="togglePopup()">
           <i class="fas fa-address-card"></i>
         </button>
+      </div>
+
+      <div class="popup" id="popup-1">
+        <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">&times;</div>
+          <h1>Contacts</h1>
+          <p>Пишите на почту <a href="mailto:zula0747@gmail.com"
+            >zula0747@gmail.com</a
+          ></p>
+        </div>
       </div>
 
       <section class="container">
@@ -106,7 +117,16 @@
 
       <section class="container">
         <h4>Иногда я отдыхаю</h4>
-        Люблю кататься на велосипеде, выезжать на природу.
+        Люблю кататься на велосипеде, выезжать на природу и делать фотографии:
+      </section>
+
+      <section class="container">
+        <div class="gallery">
+          <a href="img/gly1.jpg"><img src="img/gly1-small.jpg" /></a>
+          <a href="img/gly2.jpg"><img src="img/gly2-small.jpg" /></a>
+          <a href="img/gly3.jpg"><img src="img/gly3-small.jpg" /></a>
+          <a href="img/gly4.jpg"><img src="img/gly4-small.jpg" /></a>
+        </div>
       </section>
     </main>
     <footer class="page-footer">

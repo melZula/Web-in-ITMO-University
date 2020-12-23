@@ -73,3 +73,7 @@ console.log("Sorted: ", quickSort(a))
 console.log("a - ", document.getElementsByTagName("a").length)
 console.log("div - ", document.getElementsByTagName("div").length)
 console.log("section - ", document.getElementsByTagName("section").length)
+
+function togglePopup(){
+    document.getElementById("popup-1").classList.toggle("active");
+}
